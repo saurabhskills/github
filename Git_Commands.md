@@ -108,38 +108,47 @@ Sometimes you need to pull before pushing if your remote repository contains som
 Example:
 ```sh
 git config --global alias.co 'checkout'
-
+```
 
 
 ## After Uploading to Remote Repository
-- git status: Check the status to ensure the repository is clean.
-- git remote remove origin: Remove the remote connection if no longer needed.
-- Close the terminal window.
+1. `git status`: Check the status to ensure the repository is clean.
+2. `git remote remove origin`: Remove the remote connection if no longer needed.
+3. Close the terminal window.
 
-Starting a New Project
+## Starting a New Project
 
-Create a new directory and navigate into it:
+- Create a new directory and navigate into it:
+```sh
 mkdir new_project
 cd new_project
+```
 
-Initialize a new Git repository:
-git init
+- Initialize a new Git repository:
+- `git init`
 
-Add a new remote connection:
-git remote add origin <new_remote_url>
+- Add a new remote connection:
+- `git remote add origin <new_remote_url>`
 
 
-Removing Git Tracking from a Folder
-Navigate to the directory you want to ungit:
+- Removing Git Tracking from a Folder
+- Navigate to the directory you want to ungit:
+```sh
 cd path/to/your/directory
+```
 
-Remove the .git directory:
+- Remove the .git directory:
+```sh
 rm -rf .git
+```
 
 
-Verify by checking the status:
+- Verify by checking the status:
+```sh
 git status
+```
 
-
-If the directory is no longer a Git repository, you should see an error message:
+## If the directory is no longer a Git repository, you should see an error message:
+```sh
 fatal: not a git repository (or any of the parent directories): .git
+```
